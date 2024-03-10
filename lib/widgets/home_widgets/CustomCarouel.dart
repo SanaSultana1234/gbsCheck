@@ -34,25 +34,49 @@ class CustomCarouel extends StatelessWidget {
                       context,
                       SafeWebView(
                           url:
-                              "https://gulfnews.com/world/asia/pakistan/womens-day-10-pakistani-women-inspiring-the-country-1.77696239"));
+                              "https://timesofindia.indiatimes.com/life-style/events/happy-womens-day-2024-best-messages-quotes-wishes-and-images-to-share-on-international-womens-day/articleshow/108257281.cms"));
                 } else if (index == 1) {
                   navigateToRoute(
                       context,
                       SafeWebView(
                           url:
-                              "https://plan-international.org/ending-violence/16-ways-end-violence-girls"));
+                              "https://timesofindia.indiatimes.com/city/kolkata/kolkata-celebrates-international-womens-day-advocating-equality-and-inclusivity/articleshow/108344655.cms"));
                 } else if (index == 2) {
                   navigateToRoute(
                       context,
                       SafeWebView(
                           url:
-                              "https://www.healthline.com/health/womens-health/self-defense-tips-escape"));
+                              "https://www.deccanchronicle.com/nation/current-affairs/hyderabad-paints-the-town-pink-for-its-women-884637"));
+                } else if(index==3) {
+                  navigateToRoute(
+                      context,
+                      SafeWebView(
+                          url:
+                              "https://www.sc.com/en/global-careers/experienced-hire/spotlight-career-opportunities/careers-in-gbs-india/"));
+                } else if(index==4) {
+                  navigateToRoute(
+                      context,
+                      SafeWebView(
+                          url:
+                              "https://www.clearias.com/women-in-stem/"));
+                } else if(index==5) {
+                  navigateToRoute(
+                      context,
+                      SafeWebView(
+                          url:
+                              "https://www.clearias.com/reproductive-rights-of-women/"));
+                } else if(index==6) {
+                  navigateToRoute(
+                      context,
+                      SafeWebView(
+                          url:
+                              "https://www.clearias.com/climate-change-and-women/"));
                 } else {
                   navigateToRoute(
                       context,
                       SafeWebView(
                           url:
-                              "https://www.healthline.com/health/womens-health/self-defense-tips-escape"));
+                              "https://www.clearias.com/women-in-armed-forces/"));
                 }
               },
               child: Container(

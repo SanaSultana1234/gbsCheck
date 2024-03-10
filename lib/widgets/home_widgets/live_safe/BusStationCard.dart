@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:women_safety_app/widgets/home_widgets/safewebview.dart';
 
 class BusStationCard extends StatelessWidget {
   final Function? onMapFunction;
 
   const BusStationCard({Key? key, this.onMapFunction}) : super(key: key);
+
+  void navigateToRoute(BuildContext context, Widget route) {
+    Navigator.push(context, CupertinoPageRoute(builder: (context) => route));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +19,11 @@ class BusStationCard extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              onMapFunction!('bus stops near me');
+              navigateToRoute(
+                      context,
+                      SafeWebView(
+                          url:
+                              "https://timesofindia.indiatimes.com/life-style/events/happy-womens-day-2024-best-messages-quotes-wishes-and-images-to-share-on-international-womens-day/articleshow/108257281.cms"));
             },
             child: Card(
               elevation: 3,
